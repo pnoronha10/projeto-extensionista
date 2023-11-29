@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(204, 240, 204);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .conteudo {
+            width: 80%;
+            height: 90vh;
+            display: flex;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 212);
+        }
+
+        .imagem{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(204, 240, 204);
+            padding: 1rem;
+        }
+        .imagem img{
+            width: 30rem;
+        }
+        .form{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: white;
+            padding: 3rem;
+        }
+        .title h1:after{
+            content: '';
+            display: block;
+            width: 5rem;
+            height: 0.3rem;
+            background-color: rgb(204,240,204);
+            margin: 0 auto;
+            position: absolute;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="conteudo">
+        <div class="form">
+            <div class="title">
+                <h1>Fale Conosco</h1>
+                </div>
+                <form>
+                    <label for="Nome">Nome:</label>
+                    <input type="text" name="Nome" title="Nome" placeholder="Nome" size="50">
+                    <br><br>
+
+                    <label for="Gênero">Gênero</label>
+                    <input type="radio" name="Gênero" value="Masc"> Masculino
+                    <input type="radio" name="Gênero" value="Fem" > Feminino
+                    <input type="radio" name="Gênero" value="nb" > Não binário
+                    <br><br>
+                    
+                    <label for="Email">Email:</label>
+                    <input type="email" name="Email" placeholder="Email" size="50">
+
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" placeholder="Digite um telefone para contato" size="40">
+                    <br><br>
+
+                    <label for="Interesses">Interesses: </label><br>
+                    <input type="checkbox" name="Cursos" value="Cursos"> Cursos Profissionalizantes <br>
+                    <input type="checkbox" name="Serviços de Saúde" value="Serviços de saúde"> Serviços de Saúde <br>
+                    <input type="checkbox" name="Vagas de emprego" value="Vagas de emprego"> Vagas de emprego <br>
+                    <input type="checkbox" name="doação" value="doação"> Doação
+                     <br><br>
+
+                    <label for="Oportunidades">Oportunidades:</label>
+                    <input type="radio" name="Oportunidades" value="Receber"> Receber
+                    <input type="radio" name="Oportunidades" value="Ajudar"> Ajudar
+                    <br><br>
+                    
+                    <label for="Sugestão">Sugestão/Dúvidas</label><br>
+                    <textarea name="Sugestão ou Dúvida" id="" cols="30" rows="10"></textarea>
+
+                    <input type="submit" value="enviar">
+                    <input type="reset" value="cancelar">
+                </form>
+        </div>
+        <div class="imagem">
+            <img src="high five hands-amico.png" alt="ajuda">
+        </div>
+</body>
+</html>
